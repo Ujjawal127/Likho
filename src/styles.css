@@ -1,0 +1,129 @@
+/* Body */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9; /* Light background color */
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    max-width: 600px; /* Slightly wider for a more spacious layout */
+    margin: 0 auto;
+    border-radius: 12px; /* Softer rounded corners */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Deep shadow for a floating effect */
+    background-color: #ffffff; /* White background for the content */
+    overflow-x: hidden; /* Prevent horizontal overflow */
+    box-sizing: border-box;
+  }
+  
+  /* Header */
+  h2 {
+    text-align: center;
+    font-size: 28px;
+    color: #4A90E2; /* Bright blue header */
+    margin-bottom: 30px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  
+  /* Textarea for note input */
+  textarea {
+    width: 100%;
+    height: 120px; /* Increased height for better note-taking space */
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 8px; /* Softer corners */
+    border: 1px solid #ccc;
+    background-color: #f9f9f9; /* Light background for the textarea */
+    transition: all 0.3s ease-in-out; /* Smooth transitions */
+    color: #555; /* Darker text color inside the textarea */
+    resize: none; /* Disable resizing */
+    outline: none; /* Remove outline on focus */
+  }
+  
+  /* Textarea Focus Effect */
+  textarea:focus {
+    border-color: #4A90E2; /* Focus border turns bright blue */
+    box-shadow: 0 0 10px rgba(74, 144, 226, 0.2); /* Subtle blue glow */
+  }
+  
+  /* Buttons */
+  button {
+    background-color: #4A90E2; /* Blue button */
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 8px; /* Soft corners */
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out; /* Smooth hover effects */
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  button:hover {
+    background-color: #357ab7; /* Darker blue on hover */
+    transform: translateY(-2px); /* Slightly lift the button on hover */
+  }
+  
+  button:active {
+    transform: translateY(1px); /* Slight push-down effect on click */
+  }
+  
+  /* Note List */
+  .note-list {
+    margin-top: 30px;
+  }
+  
+  .note {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items at the top */
+    background-color: #f9f9f9; /* Light grey background for each note */
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for notes */
+    font-size: 16px;
+    min-height: 100px;
+    overflow: hidden; /* Prevent overflow of the note content */
+  }
+  
+  /* Ensure long notes are scrollable */
+  .note span {
+    color: #333;
+    flex-grow: 1;
+    max-height: 100px;
+    overflow-y: auto; /* Scroll if content overflows */
+    margin-right: 10px; /* Space between note text and button */
+  }
+  
+  .note button {
+    background-color: #e74c3c; /* Red color for delete button */
+    padding: 10px 18px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .note button:hover {
+    background-color: #c0392b; /* Darker red on hover */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    body {
+      width: 90%; /* Use 90% width for smaller screens */
+      padding: 10px;
+    }
+  
+    textarea {
+      height: 120px; /* Adjust height for smaller screens */
+      font-size: 14px;
+    }
+  
+    button {
+      width: 100%;
+    }
+  }
+  
